@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Admin.css">
+    <title>Panel de Administrador</title>
+</head>
+<body>
+    <h1>Panel de Administrador</h1>
+    
+    <!-- Formulario para CRUD de Administradores -->
+    <form>
+        <label for="adminName">Nombre:</label>
+        <input type="text" id="adminName" name="adminName" required>
+        
+    </form>
+
+    <!-- Tabla de Administradores -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Acciones</th> <!-- Nueva columna para botones de eliminar y editar -->
+                <!-- Agrega más encabezados según tus necesidades -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Ejemplo de fila con datos y botones de eliminar y editar -->
+            <tr>
+                <td>Nombre del Admin 1</td>
+                <td>
+                    <!-- Botón de eliminar -->
+                    <button type="button" onclick="eliminarRegistro('admin1')">Eliminar</button>
+                    <!-- Botón de editar -->
+                     <button type="button" onclick="editarRegistro('admin1')">Editar</button>
+        
+                </td>
+
+               
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Agrega tus scripts o funciones JavaScript aquí -->
+
+</body>
+</html>
